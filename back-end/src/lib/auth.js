@@ -3,7 +3,7 @@ module.exports = {
         if (req.isAuthenticated()) {
             return next();
         }
-        return res.redirect('/signin');
+        return  res.status(401).json({ error: 'No autorizado' });
     },
 
     isNotLoggedIN(req, res, next) {

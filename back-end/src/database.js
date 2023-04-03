@@ -1,4 +1,5 @@
-const { database } = require('./keys')
+
+const { database } = require('./config')
 const { promisify } = require('util')
 const { Pool } = require('pg')
 
